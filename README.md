@@ -5,8 +5,10 @@ This repository contains machine learning projects applied to different biologic
 ## Machine Learning Architectures
 
 AlphaGenome - [Gene Expression](#using-alphagenome-to-predict-gene-expression-of-cancer-gene-variants)
-MergeDNA - [Pre-training]()
-NucleotideTransformer - Gene Family
+
+MergeDNA - [Pre-training](#pre-training-mergedna)
+
+NucleotideTransformer - [Gene Family](#fine-tuning-nucleotide-transformer-with-ia3)
 
 ## DNA Projects
 
@@ -37,10 +39,14 @@ This implementation was written completely in pytorch and includes:
 
 ### Gene Family Prediction
 
+#### Fine-tuning Nucleotide Transformer with IA3
+
 We assess the predictive performance of two models at classifying a given gene’s DNA into the correct gene family. The two models we assessed were a “naive” kmer count logistic regression (KCLR) model and the “refined” Nucleotide Transformer 50M (NT50M) model fine-tuned with IA3.
 
 See data analysis: [dna_seq_families_analysis.ipynb](./projects/dna/gene_family/notebooks/dna_seq_families_analysis.ipynb)
+
 See code: [gene_family/scripts](./projects/dna/gene_family/scripts/)
+
 See report: [gene_family_report.pdf](./projects/dna/gene_family/gene_family_report.pdf)
 
 
