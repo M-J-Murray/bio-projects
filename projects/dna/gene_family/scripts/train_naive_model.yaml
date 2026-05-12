@@ -1,0 +1,7 @@
+train_data_path: "data/train.csv"
+val_data_path: "data/val.csv"
+checkpoint_path: "models/logreg_8mer_model.joblib"
+seq_col: "dna_sequence"
+label_col: "gene_family"
+kmer_length: 8
+iters: 100

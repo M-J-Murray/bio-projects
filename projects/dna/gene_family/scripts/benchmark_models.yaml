@@ -1,0 +1,15 @@
+# Data params
+test_data_path: "data/test.csv"
+seq_col: "dna_sequence"
+label_col: "gene_family"
+
+# Naive model params 
+naive_model_path: "models/logreg_8mer_model.joblib"
+
+# Nucleotide transformer model params
+nt_model_name: "InstaDeepAI/nucleotide-transformer-v2-50m-multi-species"
+nt_checkpont_path: "models/nt50m_model/checkpoints/nt50m-ia3-epoch=18-val/macro_f1=0.4507.ckpt"
+num_labels: 7
+max_seq_len: 682
+batch_size: 64
+device: "mps"

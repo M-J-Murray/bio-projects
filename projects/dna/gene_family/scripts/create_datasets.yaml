@@ -1,0 +1,11 @@
+dataset_path: "data/dna_seq_families.csv"
+output_path: "data/"
+seq_col: "dna_sequence"
+label_col: "gene_family"
+train_frac: 0.8
+val_frac: 0.1
+test_frac: 0.1
+min_seq_len: 18
+max_seq_len: 4092
+mmseqs_min_id: 0.5
+seed: 123

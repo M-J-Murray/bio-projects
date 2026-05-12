@@ -1,0 +1,17 @@
+train_data_path: "data/train.csv" # Path to training CSV
+val_data_path: "data/val.csv" # Path to validation CSV
+output_dir: "models/nt50m_model" # Path to output model checkpoints
+seq_col: "dna_sequence"
+label_col: "gene_family"
+num_labels: 7
+model_name: "InstaDeepAI/nucleotide-transformer-v2-50m-multi-species"
+max_seq_length: 682
+train_batch_size: 16
+val_batch_size: 64
+max_epochs: 30
+ia3_lr: 1e-3
+head_lr: 1e-3
+patience: 5 # Early stopping patience (epochs)
+dropout: 0.1
+seed: 123
+precision: "bf16-mixed" # Training precision, choices: "32", "16-mixed", "bf16-mixed"
