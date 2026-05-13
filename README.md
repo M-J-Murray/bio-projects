@@ -4,15 +4,15 @@ This repository contains machine learning projects applied to different biologic
 
 ## Machine Learning Architectures
 
-AlphaGenome - [Gene Expression](#using-alphagenome-to-predict-gene-expression-of-cancer-gene-variants)
+AlphaGenome - [Gene Expression Regression](#using-alphagenome-to-predict-gene-expression-of-cancer-gene-variants)
 
-MergeDNA - [Pre-training](#pre-training-mergedna)
+MergeDNA - [Masked Language Modelling (MLM) Pre-training](#pre-training-mergedna)
 
-NucleotideTransformer - [Gene Family](#fine-tuning-nucleotide-transformer-with-ia3)
+NucleotideTransformer - [Gene Family Classification](#fine-tuning-nucleotide-transformer-with-ia3)
 
 ## DNA Projects
 
-### Gene Expression
+### Gene Expression Regression
 
 #### Using AlphaGenome to predict gene expression of cancer gene variants 
 
@@ -37,7 +37,7 @@ This implementation was written completely in pytorch and includes:
     - Full sequence reconstruction from latent encoder compressed embeddings (frozen local encoder).
     - Adaptive masked token modelling derived from latent encoder source matrix.
 
-### Gene Family Prediction
+### Gene Family Classification
 
 #### Fine-tuning Nucleotide Transformer with IA3
 
